@@ -17,7 +17,7 @@ namespace ListasAtividade
         // Console.Clear();limpa a tela
         //Console.ReadKey(); dar pause no programa para a pessoa ler. congela a tela
         // menu com switch case
-        // && é "entre" e OU é  "||"
+        // && é "ambos" e OU é  "||"
 
         static void Main(string[] args)
         {
@@ -57,9 +57,16 @@ namespace ListasAtividade
                 Console.WriteLine("16 - Par ou Impar?");
                 Console.WriteLine("17 - Se ABC encadeado");
                 Console.WriteLine("18 - Dobro ou Triplo ");
-                Console.WriteLine("19 - Do maior para ou menor");
+                Console.WriteLine("19 - Do maior para o menor");
+                Console.WriteLine("20 - Do menor para o maior");
+                Console.WriteLine("21 - Xadrez\n");
 
-
+                Console.WriteLine("Lista 03 ");
+                Console.WriteLine("22 - Soma de 3 valores");
+                Console.WriteLine("23 - 4 notas, uma média");
+                Console.WriteLine("24 - Acerte o nome!");
+                Console.WriteLine("25 - Pares existentes");
+                Console.WriteLine("26 - Impar soma");
 
 
                 int escolha = Convert.ToInt32(Console.ReadLine());
@@ -127,10 +134,35 @@ namespace ListasAtividade
                         case 19:
                         lista02.MaiorMenor();
                         break;
+                        case 20:
+                        lista02.MenorMaior();
+                        break;
+                        case 21:
+                        lista02.Xadrez();
+                        break;
+
+                    //LISTA 03
+                    case 22:
+                        lista03.SomaValor();
+                        break;
+                    case 23:
+                        lista03.NotasMedia();
+                        break;
+
+                        case 24:
+                        lista03.QualNome();
+                        break;
+                        case 25:
+                        lista03.Pares();
+                        break;
+                        case 26:
+                        lista03.Impar();
+                        break;
 
                     default:
                         Console.WriteLine("Operação inválida.");
                         break;
+
 
                 }
 
@@ -145,6 +177,6 @@ namespace ListasAtividade
             } while (opcao == "S");
         }
 
-        
+      
     }
 }

@@ -12,41 +12,43 @@ namespace ListasAtividade
 
         public void Xadrez() // 21
         {
-            int inicio, fim, duracao;
-           
-            Console.Write("Digite a hora de início do jogo (0-2): ");
-           inicio= int.Parse(Console.ReadLine());
 
-            Console.Write("Digite a hora de fim do jogo (0-23): ");
-            fim= int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite a hora de início do jogo (0-23):");
+            int horaInicio = int.Parse(Console.ReadLine());
 
-          
-            
-            if (fim >= inicio)
+            Console.WriteLine("Digite o dia em que o jogo iniciou (número inteiro):");
+            int diaInicio = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite a hora de fim do jogo (0-23):");
+            int horaFim = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o dia em que o jogo terminou (número inteiro):");
+            int diaFim = int.Parse(Console.ReadLine());
+
+            // Validação da entrada
+            if (horaInicio < 0 || horaInicio > 23 || horaFim < 0 || horaFim > 23 || diaFim < 1)
             {
-                duracao = fim - inicio;
-            }
-            else
-            {
-                // Jogo passou da meia-noite
-                duracao = 24 - inicio + fim;
+                Console.WriteLine("Hora ou dia inválido. Por favor, digite um valor válido.");
+                return;
             }
 
-            if (duracao <= 24)
+            // Cálculo da duração
+            int duracao = horaFim - horaInicio;
+            int dias = diaFim - diaInicio;
+
+            // Ajusta a duração se o jogo passou da meia-noite
+            if (horaFim < horaInicio)
             {
-                Console.WriteLine($"O jogo durou {duracao} horas.");
-                if (duracao < 24)
-                {
-                    Console.WriteLine($"Ainda restam {24 - duracao} horas para o tempo máximo.");
-                }
+                duracao += 24;
+                dias--; // Desconta um dia, pois a duração já foi ajustada
             }
-            else
-            {
-                Console.WriteLine($"O jogo excedeu o tempo máximo em {duracao - 24} horas.");
-            }
+
+            // Calcula a duração total em horas, considerando os dias
+            duracao += dias * 24;
+            Console.WriteLine($"A duração do jogo foi de {duracao} horas.");
 
         }
-        
+
         public void MenorMaior() //20
         {
             double n1, n2, n3;

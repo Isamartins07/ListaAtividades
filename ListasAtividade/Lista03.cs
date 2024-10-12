@@ -8,23 +8,35 @@ namespace ListasAtividade
 {
     internal class Lista03
     {
+        public void Tabuada()
+        {
+            int num, resu, i;
+            Console.WriteLine("Informe um número para ver sua tabuada: ");
+            num = int.Parse(Console.ReadLine());
+
+            for (i = 1; i <= 10; i++)
+            {
+                resu = num * i;
+                Console.WriteLine(num + " X " + i + " = " + resu + "\n");
+
+            }
+           
+        }
 
 
         public void Impar()
         {
-            int impar = 0;
-            for (int i = 1; i <= 5000; i++)
-            {
-                if (i % 2 != 0)
-                {
-                    impar += i;
+            int soma = 0;
 
-                }
+            for (int i = 1; i <= 5000; i += 2)
+            {
+                soma += i;
             }
 
-
+            Console.WriteLine("A soma dos números ímpares de 1 a 5000 é: " + soma);
 
         }
+       
         public void Pares()
         {
             int inicio = 35;

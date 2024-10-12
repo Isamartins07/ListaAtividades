@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -34,6 +35,7 @@ namespace ListasAtividade
             //Criando um manual com switch case
             do
             {
+              
 
                 Console.WriteLine("Escolha uma operação:\n");
                 Console.WriteLine("Lista 01 ");
@@ -61,12 +63,25 @@ namespace ListasAtividade
                 Console.WriteLine("20 - Do menor para o maior");
                 Console.WriteLine("21 - Xadrez\n");
 
+
+                //LISTA 03
                 Console.WriteLine("Lista 03 ");
                 Console.WriteLine("22 - Soma de 3 valores");
                 Console.WriteLine("23 - 4 notas, uma média");
                 Console.WriteLine("24 - Acerte o nome!");
                 Console.WriteLine("25 - Pares existentes");
                 Console.WriteLine("26 - Impar soma");
+                Console.WriteLine("27 - Tabuada \n");
+
+
+                //LISTA 04
+                Console.WriteLine("Lista 04 ");
+                Console.WriteLine("28 - Classificação  de Idade");
+                Console.WriteLine("29 - Verificação de notas");
+                Console.WriteLine("30 - Cálculo de IMC ");
+
+
+
 
 
                 int escolha = Convert.ToInt32(Console.ReadLine());
@@ -104,6 +119,7 @@ namespace ListasAtividade
                     case 10:
                         lista01.Tinta();
                         break;
+                        
 
                     // LISTA 02
 
@@ -158,8 +174,26 @@ namespace ListasAtividade
                         case 26:
                         lista03.Impar();
                         break;
+                        case 27:
+                        lista03.Tabuada();
+                        break;
+
+                        //LISTA 04
+
+                        case 28:
+                        lista04.ClassificacaoIdade();
+                        break;
+
+                    case 29:
+                        lista04.PassouOuNao();
+                        break;
+
+                        case 30:
+                        lista04.IMC();
+                        break;
 
                     default:
+
                         Console.WriteLine("Operação inválida.");
                         break;
 

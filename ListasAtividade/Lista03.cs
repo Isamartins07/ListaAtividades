@@ -79,7 +79,7 @@ namespace ListasAtividade
 
             double n1, n2, n3, n4, soma;
 
-            Console.WriteLine("Escolha as 4 notas: ");
+            Console.WriteLine("Digite as 4 notas: ");
             n1 = double.Parse(Console.ReadLine());
             n2 = double.Parse(Console.ReadLine());
             n3 = double.Parse(Console.ReadLine());

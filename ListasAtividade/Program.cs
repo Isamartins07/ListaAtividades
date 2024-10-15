@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
@@ -35,7 +36,7 @@ namespace ListasAtividade
             //Criando um manual com switch case
             do
             {
-              
+
 
                 Console.WriteLine("Escolha uma operação:\n");
                 Console.WriteLine("Lista 01 ");
@@ -79,9 +80,12 @@ namespace ListasAtividade
                 Console.WriteLine("28 - Classificação  de Idade");
                 Console.WriteLine("29 - Verificação de notas");
                 Console.WriteLine("30 - Cálculo de IMC ");
-
-
-
+                Console.WriteLine("31 - Maior de dois Números ");
+                Console.WriteLine("32 - Verificação de votos");
+                Console.WriteLine("33 - Cálculo de Desconto");
+                Console.WriteLine("34 - Classificação de Temperatura");
+                Console.WriteLine("35 - Cálculo de Média de três números");
+                Console.WriteLine("36 - Verificação de Ano Bissexto");
 
 
                 int escolha = Convert.ToInt32(Console.ReadLine());
@@ -119,7 +123,7 @@ namespace ListasAtividade
                     case 10:
                         lista01.Tinta();
                         break;
-                        
+
 
                     // LISTA 02
 
@@ -141,19 +145,19 @@ namespace ListasAtividade
                     case 16:
                         lista02.ParImpar();
                         break;
-                        case 17:
+                    case 17:
                         lista02.Encadeado();
                         break;
                     case 18:
                         lista02.DouT();
                         break;
-                        case 19:
+                    case 19:
                         lista02.MaiorMenor();
                         break;
-                        case 20:
+                    case 20:
                         lista02.MenorMaior();
                         break;
-                        case 21:
+                    case 21:
                         lista02.Xadrez();
                         break;
 
@@ -165,22 +169,22 @@ namespace ListasAtividade
                         lista03.NotasMedia();
                         break;
 
-                        case 24:
+                    case 24:
                         lista03.QualNome();
                         break;
-                        case 25:
+                    case 25:
                         lista03.Pares();
                         break;
-                        case 26:
+                    case 26:
                         lista03.Impar();
                         break;
-                        case 27:
+                    case 27:
                         lista03.Tabuada();
                         break;
 
-                        //LISTA 04
+                    //LISTA 04
 
-                        case 28:
+                    case 28:
                         lista04.ClassificacaoIdade();
                         break;
 
@@ -188,8 +192,27 @@ namespace ListasAtividade
                         lista04.PassouOuNao();
                         break;
 
-                        case 30:
+                    case 30:
                         lista04.IMC();
+                        break;
+
+                    case 31:
+                        lista04.DiferenteOuNao();
+                        break;
+                    case 32:
+                        lista04.Votos();
+                        break;
+                    case 33:
+                        lista04.Desconto();
+                        break;
+                    case 34:
+                        lista04.Temp();
+                        break;
+                    case 35:
+                        lista04.MediaTres();
+                        break;
+                    case 36:
+                        lista04.Bissexto();
                         break;
 
                     default:
@@ -211,6 +234,6 @@ namespace ListasAtividade
             } while (opcao == "S");
         }
 
-      
+       
     }
 }

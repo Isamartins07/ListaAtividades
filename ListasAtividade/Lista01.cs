@@ -9,7 +9,7 @@ namespace ListasAtividade
     internal class Lista01
 
     {
-        public  void Tinta()
+        public  void Tinta()//10
         {
             double l, a, area, tinta;
             Console.WriteLine("Digite a Altura da sua parede em metros:");
@@ -26,7 +26,7 @@ namespace ListasAtividade
 
         }
 
-        public void Dolar()
+        public void Dolar()//9
         {
             double d, c;
             Console.WriteLine("Considere US$1,00 = R$3,45 para a nossa conversão\nDigite quantos reais você tem no momento:");
@@ -38,7 +38,7 @@ namespace ListasAtividade
 
         }
 
-        public void Metros()
+        public void Metros()//8
         {
             double m, km, cm, mm;
             Console.WriteLine("Escreva a distância em metros: ");
@@ -49,7 +49,7 @@ namespace ListasAtividade
                 Console.WriteLine("A distância de "+m+"m corresponde a:\nEm km: "+km+"\nEm cm: "+cm+"\nEm mm: "+mm);
         }
 
-        public void Dobro()
+        public void Dobro()//7
         {
             double n;
             Console.WriteLine("Escreva um número: ");
@@ -59,7 +59,7 @@ namespace ListasAtividade
         }
 
 
-        public void AntecessorSucessor()
+        public void AntecessorSucessor()//6
         {
             int i,cal1,cal2;
             Console.WriteLine("Digite um número: ");
@@ -71,7 +71,7 @@ namespace ListasAtividade
 
         }
 
-        public void Media()
+        public void Media()//5
         {
             double n1, n2, soma;
             Console.WriteLine("Digite a primeira nota do aluno: ");
@@ -84,7 +84,7 @@ namespace ListasAtividade
 
         }
 
-        public void SomaInteiros()
+        public void SomaInteiros()//4
         {
 
 
@@ -100,7 +100,7 @@ namespace ListasAtividade
 
         }
 
-        public void Salario()
+        public void Salario()//3
         {
             string nome;
             double valor;
@@ -115,7 +115,7 @@ namespace ListasAtividade
 
         }
 
-        public void BoasVindas()
+        public void BoasVindas() //2
         {
             string nome;
             Console.WriteLine("Qual o seu nome?");
@@ -126,7 +126,7 @@ namespace ListasAtividade
 
         }
 
-        public void Mundo()
+        public void Mundo() //1
         {
             Console.WriteLine("Olá, Mundo!! :) ");
 

@@ -15,7 +15,7 @@ namespace ListasAtividade
             num = int.Parse(Console.ReadLine());
 
             for (i = 1; i <= 10; i++)
-            {
+            { 
                 resu = num * i;
                 Console.WriteLine(num + " X " + i + " = " + resu + "\n");
 
